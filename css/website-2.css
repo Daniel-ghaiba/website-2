@@ -3,86 +3,112 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{ 
-    font-family: 'Raleway', sans-serif;
-}
 header{
-    height: 100px;
+    padding: 40px 0;
 }
-.container-header{
-    /* font-family: 'Raleway', sans-serif; */
+.container-header-1{
     width: 80%;
     margin: auto;
-    /* position: relative; */
-    margin-top: 25px;
-    margin-bottom: 25px;
-    overflow: auto;
 }
-.logo{
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-img img{
     width: 180px;
-    height: 100px;
-    float: left;
-    /* margin-left: 5px;/ */
+    flex-grow: 1;
 }
 .list-nav,
 .list-icon{
-    /* font-family: 'Raleway', sans-serif; */
-    /* font-family: 'Raleway', sans-serif; */
+    align-items: center;
+    flex-grow: 3;
     font-family: 'Raleway', sans-serif;
-    float: right;
-    padding-top: 25px;
-    margin-right: 5px;    
-    color: black;
 }
-.list-nav{
-    float: left;
-    margin-left: 20px;
-    font-size: 18px;
+
+.list-nav li{
+    display: inline-block;
+    font-size: 18px;   
+    /* flex-grow: 3; */
+    align-items: center;
+    margin-left: 10px;
     font-weight: bold;
-    /* position: relative; */
+    border: 2px solid white;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
 }
 .list-nav a{
     text-decoration: none;
     /* color: #cf7446; */
     color: #9f4a2d;
 }
-.list-nav li{
-    display: inline-block;
-    padding: 12px 10px;
-    border: 2px solid white;
-    /* margin-left: 12px; */
-    position: relative;
-    cursor: pointer;
+
+.dropdown{
+    visibility: hidden;
+    position: absolute;
+    transform: scale3d(0,0,0);
+    top: 45px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.849);
+    transition: 0.5s;
+}
+.drop-table{
+    width: 350px;
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.774); */
+    border: 2px solid #c56b41;
+}
+.drop-table thead td{
+    padding: 10px 0 10px 0;
+    font-size: 18px ;
+    color: #c56b41;
+}
+.drop-table td{
+    padding: 3px;
+    font-size: 15px;
 }
 
-.list-icon li {
+.list-nav li:hover .dropdown{
+    visibility: visible;
+    transform: scale3d(1,1,1);  
+}
+.list-icon li{
     display: inline-block;
-    margin-right: 15px;
-    padding: 10px 10px;
-    /* font-size: 20px; */
-    /* font-size: 30px; */
-    /* margin */
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
+    font-size: 20px;
+    font-size: 30px;
+    margin-left: 10px;
 }
 .list-icon i{
     font-size: 30px;
-    /* font-weight: bold; */
-    transition: 0.2s;
 }
 .list-icon-span{
     font-size: 15px;
     color: #c56b41;
     transition: 0.2s;
 }
-.list-icon li:hover{
-    color: #cf7446;
-    transform: scale(1.1, 1.1);
+.list-icon{
+    position: relative;
 }
-.list-icon li:hover .list-icon-span{
-    color: black;
-} 
+.zero-icon{
+    position: absolute;
+    right: 90px;
+    top: -18px;
+    background-color: brown;
+    border-radius: 50%;
+    width:15px;
+    color: white;
+    text-align: center;
+    height: 20px;
+    cursor: pointer;
+}
+.list-icon li {
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
 .list-nav  li::after{
     content: "";
     position: absolute;
@@ -109,7 +135,7 @@ header{
     transition: transform 0.4s;
     border-width: 2px 0;
     height: 90%;
-    width: 99%;
+    width: 98%;
     border-color: #c56b41;
     /* color: red; */
  transform: scale3d(0,1,1);
@@ -117,26 +143,25 @@ header{
 .list-nav li:hover::before{
     transform: scale3d(1,1,1);
 }
-.list-icon{
-    position: relative;
+
+.list-icon-span{
+    font-size: 15px;
+    color: #c56b41;
+    transition: 0.2s;
 }
-.zero-icon{
-    position: absolute;
-    right: 98px;
-    top: 15px;
-    background-color: brown;
-    border-radius: 50%;
-    width:15px;
-    color: white;
-    text-align: center;
-    height: 20px;
-    cursor: pointer;
+.list-icon li:hover{
+    color: #cf7446;
+    transform: scale(1.1, 1.1);
+}
+.list-icon li:hover .list-icon-span{
+    color: black;
 }
 /* ... header .................................................................................................. */
 
 .container-section-1{
     width: 80%;
     margin: auto;
+    /* position: relative; */
 }
 .section-1-cover{
     width: 100%;
@@ -144,7 +169,7 @@ header{
     /* position: relative; */
 }
 .section-1-img{
-    position: relative;
+    /* position: relative; */
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
