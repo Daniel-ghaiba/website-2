@@ -52,12 +52,15 @@ header{
     left: 0px;
     background-color: rgba(255, 255, 255, 0.849);
     transition: 0.5s;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 }
 .drop-table{
     width: 350px;
     text-align: center;
     /* background-color: rgba(255, 255, 255, 0.774); */
     border: 2px solid #c56b41;
+    border-radius: 2px;
 }
 .drop-table thead td{
     padding: 10px 0 10px 0;
@@ -153,6 +156,7 @@ header{
     color: #cf7446;
     transform: scale(1.1, 1.1);
 }
+
 .list-icon li:hover .list-icon-span{
     color: black;
 }
@@ -166,9 +170,6 @@ header{
 .section-1-cover{
     width: 100%;
     height: 500px;
-    /* position: relative; */
-}
-.section-1-img{
     /* position: relative; */
 }
 
