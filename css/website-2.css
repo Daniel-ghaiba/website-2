@@ -407,16 +407,13 @@ header{
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
-/* .section-5{
-    height: 1200px;
-} */
 
 .maincontainer-section-5{
     width: 80%;
     /* height: 1000px; */
     margin: auto;
     /* background-color: red; */
-    height: 1200px;
+ 
 }
 .pargraph-section-5{
     text-align: center;
