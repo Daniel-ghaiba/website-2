@@ -291,6 +291,7 @@ header{
 .sec-pargraph-section-3{
     line-height: 28px;
     font-size: 18px;
+    -webkit-user-select: none;
 }
 .lines-section-3 p{
     /* display: inline-block; */
@@ -406,6 +407,9 @@ header{
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.section-5{
+    height: 1200px;
+}
 
 .maincontainer-section-5{
     width: 80%;
@@ -517,16 +521,17 @@ header{
     left: 50%;
     transform: translate(-50% ,-50%);
     color: brown;
+    /* transition: 0.5s; */
 }
 .list-overlay li{
     display: inline-block;
     margin-left: 10px;
-    /* transition: 0.3s; */
+    transition: 0.3s;
 }
 .list-overlay li:hover{
     transform: scale(1.2,1.2);
     cursor: pointer;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 .pasic-img:hover .pasic-overlay-img1{
     transform: scale3d(1,1,1);
@@ -570,4 +575,8 @@ header{
     padding-top: 5px;
     color:#6b6464 ;
     /* font-weight: bold; */
+}
+/* ............. footer ............................................................................................................... */
+.p-footer{
+    text-align: center;
 }
