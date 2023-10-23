@@ -291,7 +291,7 @@ header{
 .sec-pargraph-section-3{
     line-height: 28px;
     font-size: 18px;
-    -webkit-user-select: none;
+    /* -webkit-user-select: none; */
 }
 .lines-section-3 p{
     /* display: inline-block; */
